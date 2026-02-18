@@ -52,6 +52,10 @@ windows-> .venv\Scripts\activate
 mac/linux -> source .venv/bin/activate
 Install Dependencies -> pip install -r requirements.txt
 
+
+Copy .env.example → .env and fill Pinecone keys
+
+
 Seed the SQL Database-> python scripts/seed_sqlite.py
 Run the App -> streamlit run app.py
 
