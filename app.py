@@ -34,7 +34,8 @@ with st.sidebar:
             st.session_state.uploaded_paths.append(tmp.name)
         st.info(f"{len(st.session_state.uploaded_paths)} PDF(s) ready.")
 
-    if st.button("Index Uploaded PDFs to Pinecone"):
+    if st.button("Index Uploaded PDFs"):
+
         if not st.session_state.uploaded_paths:
             st.warning("Upload at least 1 PDF first.")
         else:
