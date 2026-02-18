@@ -44,19 +44,13 @@ This project unifies them into **one conversational AI system**.
 On command prompt or terminal :
 
 ```bash
-git clone <your-github-repo-url>
-cd TCS
+git clone <your-github-repo-url> (for example:  git clone https://github.com/ftjohora/tcs-genai-multi-agent-support.git )
+cd tcs-genai-multi-agent-support
 python -m venv .venv
 
 windows-> .venv\Scripts\activate
 mac/linux -> source .venv/bin/activate
 Install Dependencies -> pip install -r requirements.txt
-
-.env ->
-OPENAI_API_KEY=your_api_key_here
-PINECONE_API_KEY=your_pinecone_key
-PINECONE_INDEX=langchainvector
-PINECONE_HOST=https://your-index-host.pinecone.io
 
 Seed the SQL Database-> python scripts/seed_sqlite.py
 Run the App -> streamlit run app.py
@@ -73,6 +67,15 @@ Show customer Sara’s recent tickets.
 
 
 The UI will indicate which agent handled the request.
+
+
+================================
+
+.env ->
+OPENAI_API_KEY=your_api_key_here
+PINECONE_API_KEY=your_pinecone_key
+PINECONE_INDEX=langchainvector
+PINECONE_HOST=https://your-index-host.pinecone.io
 ------------------------------------------------------------------------------------------------------------------------------
 
 ## 📂 Project Structure
