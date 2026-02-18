@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+build/
+dist/
+*.egg-info/
+
+# Virtual env
+.venv/
+venv/
+
+# Env secrets
+.env
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Data (optional — choose ONE approach below)
+# If you want to include the DB in repo, comment these 2 lines out
+data/*.db
+data/*.db-journal
